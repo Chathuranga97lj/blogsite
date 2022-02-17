@@ -67,15 +67,16 @@ const get_comment = async() =>{
 
 
         // test 4
-        const tr = document.createElement('tr');
-        const td_title = document.createElement('td');
+        const{id, title, body} = post; // destructure
+        const tr = document.createElement('tr')
+        const td_title = document.createElement('td')
         td_title.innerHTML = title;
 
-        const td_body = document.createElement('td');
+        const td_body = document.createElement('td')
         td_body.innerHTML = body;
 
-        tr.appendChild(td_title);
-        tr.appendChild(td_body);
+        tr.appendChild(td_title)
+        tr.appendChild(td_body)
 
         document.querySelector('table').appendChild(tr);
 
